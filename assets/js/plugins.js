@@ -154,7 +154,7 @@
 				centerMode: true,
 				centerPadding: "0px",
 				cssEase: "linear", // Ensure smooth transition
-				pauseOnHover: false,
+				pauseOnHover: false, // Disable default pause on hover
 				pauseOnFocus: false,
 				responsive: [
 					{
@@ -183,6 +183,21 @@
 					},
 				],
 			});
+
+			// Custom hover behavior to stop and highlight the image
+			$(".sponsor__slider-item").on("mouseenter", function() {
+				$(".sponsor__slider").slick("slickPause");
+				$(this).find("img").css({
+				  opacity: 1,
+				});
+			  });
+			  
+			  $(".sponsor__slider-item").on("mouseleave", function() {
+				$(".sponsor__slider").slick("slickPlay");
+				$(this).find("img").css({
+				  opacity: 0.25,
+				});
+			  });
 
 		// 06. next page text slider
 		$(".next__text-slider").not(".slick-initialized").slick({

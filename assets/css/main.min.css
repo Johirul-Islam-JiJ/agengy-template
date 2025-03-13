@@ -7,7 +7,7 @@
     --theme-color: #ffffff;
     --white: #ffffff;
     --black: #000000;
-    --primary-color: #F60195;
+    --primary-color: #F62681;
     --secondary-color: #9B1FE8;
     --tertiary-color: #0e0e0e;
     --quaternary-color: #040404;
@@ -3813,23 +3813,18 @@ i {
     margin-right: auto;
     opacity: .25;
     transition: var(--transition)
+    
+}
+.sponsor .sponsor__slider-item img:hover {
+    opacity: 1;
+    
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
-.sponsor .slick-center img {
+/* .sponsor .slick-center img:hover {
     opacity: 1
-}
+} */
 
 .sponsor-three {
     background-color: var(--tertiary-color)
