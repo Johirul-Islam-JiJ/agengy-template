@@ -146,14 +146,18 @@
 				autoplay: true,
 				focusOnSelect: true,
 				slidesToShow: 6,
-				speed: 1000,
-				autoplaySpeed: 3000,
+				speed: 3000, // Adjust this value for the slide transition speed
+				autoplaySpeed: 0, // Set to 0 for continuous sliding
 				slidesToScroll: 1,
 				arrows: false,
 				dots: false,
 				centerMode: true,
 				centerPadding: "0px",
-				responsive: [{
+				cssEase: "linear", // Ensure smooth transition
+				pauseOnHover: false,
+				pauseOnFocus: false,
+				responsive: [
+					{
 						breakpoint: 1700,
 						settings: {
 							slidesToShow: 5,
@@ -293,7 +297,8 @@
 				dots: false,
 				centerMode: true,
 				centerPadding: "0px",
-				responsive: [{
+				responsive: [
+					{
 						breakpoint: 1200,
 						settings: {
 							slidesToShow: 2,
@@ -411,7 +416,8 @@
 				centerMode: true,
 				centerPadding: "25%",
 				draggable: false,
-				responsive: [{
+				responsive: [
+					{
 						breakpoint: 1200,
 						settings: {
 							centerPadding: "10%",
@@ -497,7 +503,8 @@
 				pauseOnHover: true,
 				variableWidth: true,
 
-				responsive: [{
+				responsive: [
+					{
 						breakpoint: 768,
 						settings: {
 							slidesToShow: 2,
@@ -535,7 +542,8 @@
 				slidesToScroll: 1,
 				arrows: false,
 				dots: false,
-				responsive: [{
+				responsive: [
+					{
 						breakpoint: 1200,
 						settings: {
 							slidesToShow: 4,
@@ -579,7 +587,8 @@
 				dots: false,
 				centerMode: true,
 				centerPadding: "0px",
-				responsive: [{
+				responsive: [
+					{
 						breakpoint: 1400,
 						settings: {
 							slidesToShow: 3,
@@ -634,7 +643,8 @@
 				dots: false,
 				centerMode: true,
 				centerPadding: "15%",
-				responsive: [{
+				responsive: [
+					{
 						breakpoint: 1400,
 						settings: {
 							slidesToShow: 2,
