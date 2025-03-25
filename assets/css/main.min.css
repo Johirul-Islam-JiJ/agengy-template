@@ -4264,7 +4264,7 @@ i {
     inset: 0px;
     width: 0%;
     border-radius: 100px;
-    background: linear-gradient(90deg, #ff7425 0%, rgba(255, 116, 37, 0) 60.08%);
+    background: linear-gradient(90deg, var(--primary-color) 0%, rgba(255, 116, 37, 0) 60.08%);
     z-index: -1;
     transition: var(--transition)
 }
